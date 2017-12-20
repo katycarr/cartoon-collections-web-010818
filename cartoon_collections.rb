@@ -10,7 +10,7 @@ def summon_captain_planet(calls)# code an argument here
   # Your code here
   new_calls = []
   calls.collect do |call|
-    first = call[0].upcase
+    first = call[0]
     new_call = call.tr(first,first.upcase)
     new_call += "!"
     new_calls.push(new_call)
